@@ -1,12 +1,19 @@
-<p> Question-info component!</p>
-<div class="question">
-{{ question?.displayTex }}
+<div class="card_question">
+    <div class="question">
+        {{ question?.displayText }}
+    </div>
+    
+    <div class="options_container">
+        <app-options
+            [options]="question?.choiceOptions"
+            [type]="question?.type">
+        </app-options>
+    </div>
+    
+    <div 
+        class="dependentQuestions_container"
+        *ngIf="question?.hasDependentQuestion">
+    </div>
 </div>
-<div class="options_container">
 
-</div>
-<div class="dependentQuestions_container"
-*ngIf="question?.hasDependentQuestion">
-
-</div>
 

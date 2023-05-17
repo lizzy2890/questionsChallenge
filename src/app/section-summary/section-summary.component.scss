@@ -1,0 +1,18 @@
+.section_container {
+    display: flex;
+    margin: 10px 0px;
+    color: white;
+}
+.section_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: #adadad;
+}
+.section_info {
+    flex-grow: 1;
+    padding: 10px 20px 10px 20px;
+    background-color: #2c2c2c;
+
+}

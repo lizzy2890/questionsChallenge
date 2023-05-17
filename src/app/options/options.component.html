@@ -1,0 +1,33 @@
+<ng-container [ngSwitch]="type">
+    <div *ngSwitchCase="questionTypes.radio" >
+        <div *ngFor="let option of options">
+            <input 
+                type="radio" 
+                [name]="option.label"
+                [value]="option.value"
+                >
+            <label [for]="option.label"> {{ option.label }}</label>
+        </div>
+    </div>
+    <div *ngSwitchCase="questionTypes.dropdown" >
+        <div class="dropdown">
+            <select name="questionN">
+                <option
+                    *ngFor="let option of options" 
+                    [value]="option.value"> {{ option.label }}
+                </option>
+            </select>
+        </div>
+    </div>
+    <div *ngSwitchCase="questionTypes.three_buttons" >
+        <div class="three_buttons">
+            <button 
+                class="option_button"
+                *ngFor="let option of options">
+                {{ option.label }}
+            </button>
+        </div>
+    </div>
+    <div *ngSwitchDefault 
+        style="display: none;"></div>
+</ng-container>

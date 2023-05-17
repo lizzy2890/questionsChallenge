@@ -4,7 +4,7 @@ import { Question } from '../interfaces/question';
 @Component({
   selector: 'app-question-info',
   templateUrl: './question-info.component.html',
-  styleUrls: ['./question-info.component.css']
+  styleUrls: ['./question-info.component.scss']
 })
 export class QuestionInfoComponent implements OnInit {
 

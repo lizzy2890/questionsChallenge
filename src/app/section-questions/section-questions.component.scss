@@ -1,0 +1,22 @@
+.section_header {
+    display: flex;
+    margin-top: 10px;
+    border: solid grey 1px;
+}
+.section_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: #adadad;
+    color: white;
+}
+.section_title {
+    flex-grow: 1;
+    padding: 10px 20px 10px 20px;
+}
+
+.questions_container {
+    background-color: #e0e0e0;
+    padding: 20px 0px;
+}

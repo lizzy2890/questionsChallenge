@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { SectionQuestionsComponent } from './section-questions/section-questions.component';
 import { QuestionInfoComponent } from './question-info/question-info.component';
+import { OptionsComponent } from './options/options.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuestionInfoComponent } from './question-info/question-info.component';
     SectionSummaryComponent,
     MainComponent,
     SectionQuestionsComponent,
-    QuestionInfoComponent
+    QuestionInfoComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,10 @@
 <h6>{{ sectionId }}</h6>
 <div class="section_header">
-    <div class="section_index">{{ selectedSection.numberLevel }}</div>
+    <div class="section_index">{{ selectedSection?.numberLevel }}</div>
     <div class="section_title">
-            {{ selectedSection.name }}
+            {{ selectedSection?.name }}
             <br>
-            <span>{{ selectedSection.answeredQuestions }} of {{ selectedSection.totalQuestions }}</span>
+            <span>{{ selectedSection?.answeredQuestions }} of {{ selectedSection?.totalQuestions }}</span>
     </div>
 </div>
 <div class="questions_container">

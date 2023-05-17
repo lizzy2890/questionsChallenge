@@ -2,7 +2,7 @@ import { ChoiceOption } from "./choiceOption";
 
 export interface Question {
     'id': string,
-    'displayTex': string,
+    'displayText': string,
     'responseMaxLength': string,
     'numberLevel': string,
     'type': string,
@@ -47,5 +47,4 @@ export interface Question {
     'isRemediated': boolean,
     'hasAlertFlag': boolean,
     'hasSkippedFlag': boolean
-
 }
